@@ -2,7 +2,7 @@
 
 ## Introduction
 This is a repository for the Final Integrated Project for the third term of the Interactive Media Design program at Fanshawe College.
-The project consists in the designing and development of a personal portfolio website built with HTML, modular CSS (SASS/SCSS) and modular JavaScript (AJAX).
+The project consists in the designing and development of a personal portfolio website built with HTML, modular CSS (SASS/SCSS) and modular JavaScript (AJAX). To know more about I'm trying to build here, take a look at my: [WEBSITE ROADMAP](https://docs.google.com/document/d/1p99JtoalMNS0GLVIcETt6pV3v1dQenOZLb30loZ-3BA/edit?usp=sharing)
 
 ## Author
 ### Sandro Guedes
