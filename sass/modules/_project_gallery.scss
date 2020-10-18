@@ -1,0 +1,19 @@
+.project_gallery_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:$BG_Gradient;
+}
+
+.project_gallery_wrapper {
+    display:flex;
+    flex-direction:row;
+    width: 1024px;
+}
+
+.project_gallery {
+    //temp
+    min-height:600px;
+    width:100%;
+    border: 1px solid green;
+}

@@ -12,28 +12,54 @@
             justify-content:center;
             margin-bottom:60px;
         }
-
         .section_article {
             display:flex;
             flex-direction:row;
             justify-content: space-between;
         }
-
-        h2 {
-            font-family: 'Bebas Neue', cursive;
-            font-size: 4em;
-            color:$S_Blue;
-        }
-
         .section_txt {
         }
-
         p {
             font-family:sans-serif;
             font-size:1.1em;
             color: $Desat_Blue;
             line-height: 200%;
         }
+    }
+}
 
+.project_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:$Desat_Blue;
+
+    .project_section_wrapper {
+        display:flex;
+        flex-direction:row;
+        width: 1024px;
+        .project_section_text {
+            width:50%;
+            background-color:white;
+            p {
+                padding:10px;
+                font-family:sans-serif;
+                font-size:1.2em;
+                color: $Desat_Blue;
+                line-height: 170%;
+            }
+        }        
+        .project_section_tech {
+            width:50%;
+            .project_section_title_container {
+                padding:10px;
+                background-color:$Deep_Blue;
+            }
+            .technologies_container {
+                //temp
+                min-height:400px;
+                border: 1px solid red;
+            }
+        }
     }
 }
