@@ -1,1 +1,39 @@
-// keep
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:60px 0 60px 0;
+    
+    .section_wrapper {
+        width: 1024px;
+
+        .section_title {
+            display:flex;
+            justify-content:center;
+            margin-bottom:60px;
+        }
+
+        .section_article {
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4em;
+            color:$S_Blue;
+        }
+
+        .section_txt {
+        }
+
+        p {
+            font-family:sans-serif;
+            font-size:1.1em;
+            color: $Desat_Blue;
+            line-height: 200%;
+        }
+
+    }
+}

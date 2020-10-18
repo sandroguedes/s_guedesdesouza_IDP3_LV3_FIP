@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with SASS and Modules</title>
+    <title>SG Design | Development | Art</title>
 
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,9 +12,127 @@
 
 <body>
     <main>
+        <nav class=topnav>
+            <div class="topnav_wrapper">
+                <div class="topnav_logo_wrapper">
+                    <a href="index.html"><div class="topnav_logo"></div></a>
+                </div>
+                <div class="topnav_items">
+                    <div class="topnav_section_links">
+                        <div class="topnav_section_links_wrapper">
+                            <a href="about.html">ABOUT</a>
+                            <a href="contact.html">CONTACT</a>
+                        </div>
+                    </div>
+                    <div class="topnav_social_media">
+                        <div class="topnav_social_media_wrapper">
+                            <div class="social_icon"></div>
+                            <div class="social_icon"></div>
+                            <div class="social_icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section  class="header">
+            <div class="about">
+                <div class="header_title">
+                    <div class=header_title_wrapper>
+                        <h1>
+                            CONTACT
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section_wrapper">
+                <div class="section_title">
+                    <h2>TITLE</h2>
+                </div>
+    
+                <div class="section_article">
+                    <article class="section_txt">
+                        <p>
+                            Sint laboreped mo inctempelit, id quibusae. Nam, quis sae. Ti idundisquiam et plam, sitatqu ibusdant elestia sequo officienimin porerov idiat.
+                        </p>
+                    </article>
+                </div>
+            </div>            
+        </section>
+
+        <section class="section">
+        <h1 class="hidden">Contact Form</h1>
+            <div class="form_block">
+                <form class=form_wrapper>
+                    <div class="form_group_wrapper">
+                        <div class="form_item">
+                            <div class="form_label_container">
+                                <div class="contact_form_label">
+                                    <label for="form_name">Name</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label_container">
+                                <div class="contact_form_label">
+                                    <label>Email</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="yourname@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form_group_wrapper">
+                        <div class="form_item">
+                            <div class="form_label_container">
+                                <div class="contact_form_label">
+                                    <label>Phone</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="+1 000 000 000">
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label_container">
+                                <div class="contact_form_label">
+                                    <label>Website</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="www.yoursite.com">
+                        </div>
+                    </div>
+
+                    <div class="form_group_message_wrapper">
+                        <div class="form_item">
+                            <div class="form_label_container">
+                                <div class="contact_form_label">
+                                        <label>Message</label>
+                                </div>
+                            </div>
+                            <textarea class="form_message" name="subject" placeholder="Message"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="button_area">
+                        <a href="#">
+                            <button class="form_submit_button">SUBMIT</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
-    <footer>this is a simple footer</footer>
+    <footer class="footer">
+        <div class="footer_text">
+            <p>Copyright © 2020 Sandro Guedes</p>
+        </div>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
 </body>
