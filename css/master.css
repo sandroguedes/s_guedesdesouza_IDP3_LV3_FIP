@@ -125,6 +125,27 @@ table {
   display: none;
 }
 
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
+  color: #0082e6;
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5em;
+  color: #0082e6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -205,11 +226,18 @@ table {
   margin-top: -10px;
 }
 
+.gallery_wrapper {
+  width: 100%;
+}
 .gallery_wrapper .gallery {
   display: grid;
-  background-color: black;
-  grid-template-columns: repeat(4, 25vw);
+  grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(5, 40vh);
+}
+.gallery_wrapper .gallery .gallery_item {
+  background-color: black;
+  border: 1px solid red;
+  overflow: hidden;
 }
 .gallery_wrapper .gallery .gal_01 {
   grid-area: 1/1/2/2;
@@ -250,12 +278,73 @@ table {
 .gallery_wrapper .gallery .gal_13 {
   grid-area: 5/3/6/5;
 }
-.gallery_wrapper .gallery .gallery_item {
-  transition-duration: 0.3s;
+
+.gallery_description {
+  opacity: 0%;
+  height: 100%;
+  transition-duration: 0.4s;
   border: 1px solid red;
+  padding: 5%;
 }
-.gallery_wrapper .gallery .gallery_item:hover {
+.gallery_description p {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #5082aa;
+  line-height: 200%;
+}
+
+.gallery_description:hover {
+  opacity: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.project_link a {
+  text-decoration: none;
+}
+
+.project_link_button {
+  background-color: #0082e6;
+  width: 100px;
+  text-align: center;
+}
+.project_link_button p {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: white;
+  line-height: 200%;
+}
+
+.project_link_button:hover {
+  border: 1px solid #0082e6;
   background-color: white;
+}
+.project_link_button:hover p {
+  color: #0082e6;
+}
+
+.project_gallery_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(333deg, #02000b 0%, #04272f 100%);
+}
+
+.project_gallery_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+}
+
+.project_gallery {
+  min-height: 600px;
+  width: 100%;
+  border: 1px solid green;
 }
 
 .section {
@@ -277,16 +366,45 @@ table {
   flex-direction: row;
   justify-content: space-between;
 }
-.section .section_wrapper h2 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 4em;
-  color: #0082e6;
-}
 .section .section_wrapper p {
   font-family: sans-serif;
   font-size: 1.1em;
   color: #5082aa;
   line-height: 200%;
+}
+
+.project_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #5082aa;
+}
+.project_section .project_section_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+}
+.project_section .project_section_wrapper .project_section_text {
+  width: 50%;
+  background-color: white;
+}
+.project_section .project_section_wrapper .project_section_text p {
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: #5082aa;
+  line-height: 170%;
+}
+.project_section .project_section_wrapper .project_section_tech {
+  width: 50%;
+}
+.project_section .project_section_wrapper .project_section_tech .project_section_title_container {
+  padding: 10px;
+  background-color: #1e3264;
+}
+.project_section .project_section_wrapper .project_section_tech .technologies_container {
+  min-height: 400px;
+  border: 1px solid red;
 }
 
 .form_block {
