@@ -1,8 +1,7 @@
 # MIDTERM FIP Checkpoint
 
 ## Introduction
-This is a repository for the Final Integrated Project for the third term of the Interactive Media Design program at Fanshawe College.
-The project consists in the designing and development of a personal portfolio website built with HTML, modular CSS (SASS/SCSS) and modular JavaScript (AJAX). To know more about I'm trying to build here, take a look at my: [WEBSITE ROADMAP](https://docs.google.com/document/d/1p99JtoalMNS0GLVIcETt6pV3v1dQenOZLb30loZ-3BA/edit?usp=sharing)
+The project consists in the designing and development of a personal portfolio website built with HTML, modular CSS and JavaScript. To know more about I'm trying to build here, take a look at my: [WEBSITE ROADMAP](https://docs.google.com/document/d/1p99JtoalMNS0GLVIcETt6pV3v1dQenOZLb30loZ-3BA/edit?usp=sharing)
 
 ## Author
 ### Sandro Guedes
@@ -16,6 +15,7 @@ The project consists in the designing and development of a personal portfolio we
 * JS
 
 ## Completion Status
+By it's very nature, this project will always be a "work in progress", however in it's current form I consider it to be in an "alpha" state, meaning it's still very bare bones and I still expect stuff to break here and there. I intend to keep working hard on it until it reaches a state where it looks more like a sable "1.0".
 
 ### Layout
 The desktop layout has most of it's block level elements in place, so there shouldn't be much left to do on that front. Mobile version, however, is still in-development and not ready for a commit.
@@ -25,11 +25,11 @@ Two versions of the logo in SVG format are properly applied to the layout. Still
 Every other asset currently displayed is a placeholder that should be replaced before final delivery.
 
 ### JavaScript applications
-No JS is currently integrated into the site. I have plans for write a gallery app for the project page, as well a few functions specific to the mobile version of the site -like hamburger menus and such. Should time allows for it, I also have plans in place to develop an introductory micro interaction for the home page's desktop version, but this one is likely to not happen during this term (maybe by the next one).
+Sticky topnav and template project gallery are working, though the code is still a bit "hacky" in some parts. Still trying to figure out how to properly integrate vue.js.
+I also have plans in place to develop an introductory micro interaction for the home page's desktop version, but this one is likely to not happen during this term (maybe by the next one).
 
 ### Server-Side (SQL, PHP)
 No server-side or data-base code has been written yet.
-
 
 ## License
 ### MIT License
