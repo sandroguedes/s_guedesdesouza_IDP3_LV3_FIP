@@ -13,7 +13,7 @@ The project consists in the designing and development of a personal portfolio we
 
 * HTML
 * CSS3/SASS/SCSS
-* JS/AJAX
+* JS
 
 ## Completion Status
 
