@@ -1,0 +1,88 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:60px 0 60px 0;
+    .section_wrapper {
+        width: 1024px;
+        .section_title {
+            display:flex;
+            justify-content:center;
+            margin-bottom:60px;
+        }
+        .section_article {
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+        }
+        .section_txt {
+        }
+        p {
+            font-family:sans-serif;
+            font-size:1.1em;
+            color: $Desat_Blue;
+            line-height: 200%;
+        }
+        .section_button {
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-end;
+            margin-top: 20px;
+            .section_link_button {
+                width: 105px;
+                text-decoration:none;
+                text-align:center;
+                background-color: $S_Blue;
+                p {
+                    font-size:1.4em;
+                    color:white;
+                }
+            }
+            :hover {
+                background-color: white;
+                p {
+                    color: $S_Blue;
+                }
+            }
+        }
+    }
+}
+
+.project_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:$Desat_Blue;
+    .project_section_wrapper {
+        display:flex;
+        flex-direction:row;
+        width: 1024px;
+        .project_section_text_container {
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            width:50%;
+            background-color:white;
+            .project_section_text {
+                width: 90%;
+            }
+            p {
+                font-family:sans-serif;
+                font-size:1.2em;
+                color: $Desat_Blue;
+                line-height: 170%;
+            }
+        }        
+        .project_section_tech {
+            width:50%;
+            .project_section_title_container {
+                padding:10px;
+                background-color:$Deep_Blue;
+            }
+            .technologies_container {
+                //temp
+                min-height:400px;
+            }
+        }
+    }
+}

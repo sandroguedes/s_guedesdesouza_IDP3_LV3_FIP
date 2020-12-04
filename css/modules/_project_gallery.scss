@@ -1,0 +1,79 @@
+.project_gallery_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:$BG_Gradient;
+    .project_gallery_wrapper {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        width: 1024px;
+        overflow:hidden;
+        .project_gallery {
+            //temp
+            min-height:600px;
+            width:100%;
+            .mySlides {
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #gallery_slide_01 {
+                height:600px;
+                background-image:url(../images/gal_placeholder_01.png);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover;
+            }
+            #gallery_slide_02 {
+                height:600px;
+                background-image:url(../images/gal_placeholder_02.png);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover;
+            }
+            #gallery_slide_03 {
+                height:600px;
+                background-image:url(../images/gal_placeholder_03.png);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover;
+            }
+            #gallery_slide_04 {
+                height:600px;
+                background-image:url(../images/gal_placeholder_04.png);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover;
+            }
+            #gallery_slide_05 {
+                height:600px;
+                background-image:url(../images/gal_placeholder_05.png);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover;
+            }
+        }
+    }
+}
+
+.cursor_container {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    cursor: pointer;
+    margin-top:-320px;
+    margin-right:auto;
+    margin-left:auto;
+    .prev, .next {
+        width: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.4s ease;
+        user-select: none;
+        padding: 16px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+}

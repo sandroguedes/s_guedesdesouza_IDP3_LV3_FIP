@@ -26,9 +26,27 @@
                     </div>
                     <div class="topnav_social_media">
                         <div class="topnav_social_media_wrapper">
-                            <div class="social_icon"></div>
-                            <div class="social_icon"></div>
-                            <div class="social_icon"></div>
+                            <a href="https://www.facebook.com/sandro.guedes.s">
+                                <div class="social_icon">
+                                    <img class="icon_img" src="images/icon_nav_facebook.svg" alt="facebook">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/sandro.guedes.arts">
+                                <div class="social_icon">
+                                    <img class="icon_img" src="images/icon_nav_instagram.svg" alt="instagram">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sandro-guedes-de-souza">
+                                <div class="social_icon">
+                                    <img class="icon_img" src="images/icon_nav_linkedin.svg" alt="linkedin">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="topnav_hamburger">
+                        <div class="topnav_hamburger_icon">
+
                         </div>
                     </div>
                 </div>
@@ -58,6 +76,7 @@
                         <p>
                             Nam, et officia quissuntem resequunt optae ommolut ipsunte cusapit magnis ullenda esequi quiaspe rovidis ma quo volorrori ut aut in eius pla eumquia et quamus et que vendi ne veliae porendu Ut oditae velit ra quae imus ute sam, nient acesere pere nobis deni odio.
                         </p>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -65,17 +84,23 @@
 
         <section class="project_section">
             <div class="project_section_wrapper">
-                <div class="project_section_text">
-                    <p>
-                        Nam, et officia quissuntem resequunt optae ommolut ipsunte cusapit magnis ullenda esequi quiaspe rovidis ma quo volorrori ut aut in eius pla eumquia et quamus et que vendi ne veliae porendu Ut oditae velit ra quae imus ute sam, nient acesere pere nobis deni odio.
-                    </p>
+                <div class="project_section_text_container">
+                    <div class="project_section_text">
+                        <p>
+                            Nam, et officia quissuntem resequunt optae ommolut ipsunte cusapit magnis ullenda esequi quiaspe rovidis ma quo volorrori ut aut in eius pla eumquia et quamus et que vendi ne veliae porendu Ut oditae velit ra quae imus ute sam, nient acesere pere nobis deni odio.
+                        </p>
+                    </div>
                 </div>
                 <div class="project_section_tech">
                     <div class="project_section_title_container">
                         <h4> TECHNOLOGIES USED</h4>
                     </div>
                     <div class="technologies_container">
-
+                        <h5>• Technology</h5>
+                        <h5>• Technology</h5>
+                        <h5>• Technology</h5>
+                        <h5>• Technology</h5>
+                        <h5>• Technology</h5>
                     </div>
                 </div>
             </div>
@@ -83,8 +108,51 @@
 
         <section class="project_gallery_section">
             <div class="project_gallery_wrapper">
+                <h1 class="hidden">project gallery</h1>
                 <div class="project_gallery">
+                    <div class="mySlides">
+                        <div id="gallery_slide_01"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div id="gallery_slide_02"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div id="gallery_slide_03"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div id="gallery_slide_04"></div>
+                    </div>
+                    <div class="mySlides">
+                        <div id="gallery_slide_05"></div>
+                    </div>
+                    <div class="cursor_container">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <script>
+                        // SlideShow script
+                        // this code is adapted from what was built during the previous term FIP, which was in turn adapted from the Slideshow Tutorial from W3Schools at "https://www.w3schools.com/howto/howto_js_slideshow.asp".
+                        console.log('slide show FIRED!');
 
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                            }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            if (n > slides.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                            
+                            slides[slideIndex-1].style.display = "block";
+                            }
+                        // ------------------------------------------------------
+                        // Couldn't get this to work while linked from the main.js file, yet it seems to work properly from this file. Will come back to debug this after the rest of the front-end is done.
+                    </script>
                 </div>
             </div>
         </section>
@@ -97,7 +165,7 @@
         </div>
     </footer>
 
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
