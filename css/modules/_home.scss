@@ -1,0 +1,43 @@
+.hero {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image:url(../images/Temp_Hero.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+
+    .hero_title {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+
+        .hero_title_viewport {
+            margin-top: 90px;
+            height: 130px;
+            width: 530px;
+            background-image:url(../images/0_LOGO_02_SVG.svg);
+            background-repeat:no-repeat;
+        }
+    }
+}
+
+.intro {
+    display:flex;
+    background: $BG_Gradient;
+}
+
+.intro_img {
+    height: 400px;
+    width: 450px;
+    // temp
+    background-color:grey;
+}
+
+.intro_txt {
+    height: 100%;
+    width: 500px;
+    margin-top:-10px;
+}

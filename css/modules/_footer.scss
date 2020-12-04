@@ -1,0 +1,15 @@
+.footer {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    height:60px;
+    background-color:$Deep_Blue;
+
+    .footer_text {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        font-family:$main-font;
+        color:white;
+    }
+}
