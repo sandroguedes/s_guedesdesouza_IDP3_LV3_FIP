@@ -3,6 +3,9 @@
 ## Introduction
 The project consists in the designing and development of a personal portfolio website built with HTML, modular CSS and JavaScript. To know more about I'm trying to build here, take a look at my: [WEBSITE ROADMAP](https://docs.google.com/document/d/1p99JtoalMNS0GLVIcETt6pV3v1dQenOZLb30loZ-3BA/edit?usp=sharing)
 
+## Hosting
+The website is live at http://sgs-design.com.
+
 ## Author
 ### Sandro Guedes
 * Design
