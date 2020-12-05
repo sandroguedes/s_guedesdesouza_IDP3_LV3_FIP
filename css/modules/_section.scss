@@ -4,18 +4,21 @@
     justify-content: center;
     padding:60px 0 60px 0;
     .section_wrapper {
-        width: 1024px;
         .section_title {
             display:flex;
             justify-content:center;
             margin-bottom:60px;
+            margin-left:20px;
+            margin-right:20px;
+            text-align:center;
         }
         .section_article {
-            display:flex;
-            flex-direction:row;
-            justify-content: space-between;
+            margin: 0 20px 0 20px;
         }
         .section_txt {
+            h3 {
+                text-align:left;
+            }
         }
         p {
             font-family:sans-serif;
@@ -26,16 +29,19 @@
         .section_button {
             display:flex;
             flex-direction:row;
-            justify-content:flex-end;
+            justify-content: flex-end;
             margin-top: 20px;
             .section_link_button {
                 width: 105px;
                 text-decoration:none;
                 text-align:center;
                 background-color: $S_Blue;
+                margin-left: 20px;
+                margin-right: 20px;
                 p {
                     font-size:1.4em;
                     color:white;
+                    margin: 0;
                 }
             }
             :hover {
@@ -48,6 +54,26 @@
     }
 }
 
+@media only screen and (min-width: 1030px) {
+    .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .section_wrapper {
+            width: 1024px;
+            .section_title {
+                margin-left:0;
+                margin-right:0;
+            }
+            .section_article {
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
 .project_section {
     display: flex;
     flex-direction: row;
@@ -55,34 +81,109 @@
     background-color:$Desat_Blue;
     .project_section_wrapper {
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         width: 1024px;
         .project_section_text_container {
             display: flex;
             flex-direction:row;
             justify-content:center;
-            width:50%;
             background-color:white;
+            margin-top: -50px;
             .project_section_text {
-                width: 90%;
+                margin: 20px 20px 40px 20px;
             }
             p {
                 font-family:sans-serif;
-                font-size:1.2em;
+                font-size:1.1em;
                 color: $Desat_Blue;
-                line-height: 170%;
+                line-height: 200%;
             }
         }        
         .project_section_tech {
-            width:50%;
             .project_section_title_container {
                 padding:10px;
                 background-color:$Deep_Blue;
             }
             .technologies_container {
                 //temp
-                min-height:400px;
+                height:400px;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    .project_section {
+        .project_section_wrapper {
+            display:flex;
+            flex-direction:row;
+            width: 1024px;
+            .project_section_text_container {
+                width:50%;
+                margin-top: 0;
+                .project_section_text {
+                    margin:0;
+                    width: 90%;
+                }
+                p {
+                    font-size:1.2em;
+                    line-height: 170%;
+                }
+            }        
+            .project_section_tech {
+                width:50%;
+                .project_section_title_container {
+                    padding:10px;
+                    background-color:$Deep_Blue;
+                }
+            }
+        }
+    }
+}
+
+.about_img {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.about_txt {
+    height: 100%;
+    max-width: 720px;
+    margin: 40px auto 0 auto;
+}
+.about_company {
+    h3 {
+        text-align: left;
+        margin-top: -15px;
+    }
+}
+.about_company_date {
+    h4 {
+        text-align: left;
+        color: $Desat_Blue;
+        font-size:1.7em;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+}
+.about_bottom {
+    height: 80px;
+    width:100%;
+}
+
+@media only screen and (min-width: 1030px) {
+    .about_img {
+        display:block;
+        width: 250px;
+    }
+    .about_txt {
+        height: 100%;
+        max-width: 730px;
+        margin-top:30px;
+        margin-left:20px;
     }
 }

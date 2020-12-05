@@ -4,41 +4,111 @@
 
 h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4em;
+    font-size: 3.5em;
     color:$S_Blue;
+    transition:0.3s;
 }
 
 h3 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
     color:$S_Blue;
     text-align:center;
     margin-bottom:20px;
+    transition:0.3s;
 }
 
 h4 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
     color:white;
     text-align:center;
+    transition:0.3s;
 }
 
 h5 {
     font-family: sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     color:white;
     text-align:left;
     margin: 20px;
+    transition:0.3s;
 }
 
 .video_container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 30px;
     .video_player {
-        height: 300px;
-        width: 530px;
-        margin-left: 50px;
+        width: 100%;
     }
     :focus {
         outline:none;
     }
 }
+
+@media only screen and (min-width: 1030px) {
+    h2 {
+        font-size: 4em;
+    }
+    
+    h3 {
+        font-size: 2.5em;
+        margin-bottom:20px;
+    }
+    
+    h4 {
+        font-size: 2.5em;
+    }
+    
+    h5 {
+        font-size: 1.3em;
+        margin: 20px;
+    }
+    .video_container {
+        margin-top: -10px;
+        .video_player {
+            height: 295px;
+            width: 520px;
+            margin-left: 50px;
+        }
+    }
+}
+
+// SCROLL START
+// This was originally developed for level 02 FIP, and the basis for the code comes from CSS Tricks. It was repurpused and adapted for this application.
+
+html {
+    --scrollbarBG: linear-gradient(0deg, rgb(0, 33, 116) 0%, rgb(18, 110, 153) 51%, rgb(43, 178, 187) 100%);
+    --thumbBG: rgb(0, 187, 255);
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    margin:5px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track
+    {background: var(--scrollbarBG);}
+
+body::-webkit-scrollbar-thumb
+    {background-color: var(--thumbBG);}
+
+
+@media only screen and (min-width: 1030px) {
+	body::-webkit-scrollbar
+	{
+	width: 15px;
+	margin:5px;
+	}
+}
+
+// SCROLL END

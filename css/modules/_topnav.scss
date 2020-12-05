@@ -2,32 +2,32 @@
     display:flex;
     flex-direction:row;
     justify-content:center;
-    height:90px;
+    height:60px;
     background-color:rgba(0, 130, 230, 0.9);
     position:fixed;
     top:0;
     width:100%;
     z-index:+1;
-}
-
-.topnav_wrapper {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    width:1024px;
-    padding: 5px;
-}
-
-.topnav_logo_wrapper {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    .topnav_logo {
-        width: 65px;
-        height: 65px;
-        background-image:url(../images/0_LOGO_01_SVG.svg);
-        cursor:pointer;
+    transition:0.3s;
+    .topnav_wrapper {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:1024px;
+        padding: 5px;
+        .topnav_logo_wrapper {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            margin-left: 10px;
+            .topnav_logo {
+                width: 40px;
+                height: 40px;
+                background-image:url(../images/0_LOGO_01_SVG.svg);
+                cursor:pointer;
+                transition: 0.3s;
+            }
+        }
     }
 }
 
@@ -35,7 +35,6 @@
     display:flex;
     flex-direction:row;
     justify-content:center;
-
     .topnav_section_links
     {
         display:flex;
@@ -48,7 +47,7 @@
             a {
                 text-decoration:none;
                 font-family:sans-serif;
-                font-size:1.5em;
+                font-size:1.1em;
                 color: white;
                 margin-left:10px;
                 margin-right:10px;
@@ -69,24 +68,74 @@
             display:flex;
             flex-direction:row;
             justify-content:center;
+            margin-right: 15px;
             .social_icon {
                 display: flex;
                 flex-direction: row;
                 justify-content:center;
-                width:40px;
-                height:40px;
+                width:25px;
+                height:25px;
                 margin-left:15px;
                 .icon_img {
                     display: flex;
                     flex-direction:column;
                     justify-content: center;
-                    width: 34px;
-                    height: 34px;
+                    width: 24px;
+                    height: 24px;
                     transition: 0.3s;
                 }
                 :hover {
-                    width: 38px;
-                    height: 38px;
+                    width: 26px;
+                    height: 26px;
+                    // just in case someone is crazy enough to plug in a mouse...(seriously, I know people who do that)
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1030px) {
+    .topnav {
+        height:90px;
+        .topnav_wrapper {
+            width:1024px;
+            padding: 5px;
+            .topnav_logo_wrapper {
+                margin-left: 0px;
+                .topnav_logo {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+    
+    .topnav_items {
+        .topnav_section_links
+        {
+            .topnav_section_links_wrapper {
+                a {
+                    font-size:1.5em;
+                }
+            }
+        }
+    
+        .topnav_social_media {
+            .topnav_social_media_wrapper {
+                margin-right: 0;
+                .social_icon {
+                    width:40px;
+                    height:40px;
+                    margin-left:15px;
+                    .icon_img {
+                        width: 34px;
+                        height: 34px;
+                        transition: 0.3s;
+                    }
+                    :hover {
+                        width: 38px;
+                        height: 38px;
+                    }
                 }
             }
         }

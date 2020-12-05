@@ -8,18 +8,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
-
     .hero_title {
         display:flex;
         flex-direction:row;
         justify-content:center;
-
         .hero_title_viewport {
             margin-top: 90px;
-            height: 130px;
-            width: 530px;
+            height: 90px;
+            width: 100%;
             background-image:url(../images/0_LOGO_02_SVG.svg);
+            background-position:center;
             background-repeat:no-repeat;
+            transition: 0.3s;
         }
     }
 }
@@ -28,16 +28,38 @@
     display:flex;
     background: $BG_Gradient;
 }
-
 .intro_img {
-    height: 400px;
-    width: 450px;
-    // temp
-    background-color:grey;
+    height: 350px;
+    background-image: url(../images/profile_temp.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    margin-top:-10px;
 }
-
 .intro_txt {
     height: 100%;
-    width: 500px;
-    margin-top:-10px;
+    margin-top:30px;
+}
+
+@media only screen and (min-width: 1030px) {
+    .hero {
+        .hero_title {
+            .hero_title_viewport {
+                margin-top: 90px;
+                height: 130px;
+            }
+        }
+    }
+    .intro_img {
+        height: 350px;
+        width: 350px;
+        background-image: url(../images/profile_temp.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        margin-top:-10px;
+    }
+    .intro_txt {
+        height: 100%;
+        width: 620px;
+        margin-top:30px;
+    }
 }
