@@ -1202,6 +1202,85 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.thankyou_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #0082e6;
+  text-align: center;
+}
+
+.thankyou_wrapper h3 {
+  color: white;
+  margin: 0 20px 0 20px;
+}
+
+.thankyou_wrapper h2 {
+  color: white;
+  margin: 0 20px 30px 20px;
+  border-bottom: 1px solid white;
+}
+
+.thankyou_wrapper .thankyou_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin: 20px auto 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.thankyou_wrapper .thankyou_button .thankyou_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: 1px solid white;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+
+.thankyou_wrapper .thankyou_button .thankyou_btn a {
+  text-align: center;
+  color: #0082e6 !important;
+  text-decoration: none;
+  background: none !important;
+  margin-top: 5px;
+}
+
+.thankyou_wrapper .thankyou_button .thankyou_btn a :hover {
+  background: none !important;
+}
+
+.thankyou_wrapper .thankyou_button :hover {
+  background-color: rgba(0, 238, 255, 0.6);
+}
+
 .form_block {
   display: -webkit-box;
   display: -ms-flexbox;
