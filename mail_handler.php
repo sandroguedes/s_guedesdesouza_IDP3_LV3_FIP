@@ -4,11 +4,13 @@
 		$name=$_POST['name'];
 		$email=$_POST['mail'];
 		$phone=$_POST['phone'];
+		$senderSubject=$_POST['subject'];
 		$msg=$_POST['message'];
 
 		$to='sandro.guedes@live.com';
-		$subject='SGS_Design';
-		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
+		$subject="SG Design"."-".$senderSubject;
+		// $subject='SG Design';
+		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n\n".$senderSubject."\n\n".$msg;
 		$headers="From: ".$email;
 
         if(mail($to, $subject, $message, $headers)){
@@ -19,8 +21,3 @@
         }
 	}
 ?>
-        
-<!-- if(mail($to, $subject, $message, $headers)){
-echo "<h2>Sent Successfully! Thank you"." ".$name.", I will get back to you shortly!</h2>";
-}else{
-echo "Something went wrong!";} -->
