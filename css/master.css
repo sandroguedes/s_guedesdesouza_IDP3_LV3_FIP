@@ -397,7 +397,7 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  height: 400px;
+  height: 410px;
 }
 
 .header .header_title {
@@ -439,7 +439,7 @@ body::-webkit-scrollbar-thumb {
 
 .header .about {
   height: 100%;
-  background-image: url(../images/Temp_Header.png);
+  background-image: url(../images/Header_about.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -448,7 +448,7 @@ body::-webkit-scrollbar-thumb {
 
 .header .contact {
   height: 100%;
-  background-image: url(../images/Temp_Header.png);
+  background-image: url(../images/Header_Contact.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -571,6 +571,78 @@ body::-webkit-scrollbar-thumb {
 .gallery_wrapper .gallery .gallery_item {
   height: 400px;
   background-image: url(../images/Temp_Header.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_01 {
+  background-image: url(../images/gal_hawaiiantropic.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_02 {
+  background-image: url(../images/gal_springfields.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_03 {
+  background-image: url(../images/gal_getpizza.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_04 {
+  background-image: url(../images/gal_couplesresort.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_05 {
+  background-image: url(../images/gal_elin.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_06 {
+  background-image: url(../images/gal_banya.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_07 {
+  background-image: url(../images/gal_sonhoscoloridos.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.gallery_wrapper .gallery .gal_08 {
+  background-image: url(../images/gal_dirtyshot.png);
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -769,7 +841,7 @@ body::-webkit-scrollbar-thumb {
 
 .gallery_description:hover {
   opacity: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.88);
 }
 
 .project_link_container {
@@ -1303,10 +1375,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 400px;
+  width: 350px;
 }
 
 .form_wrapper .form_group_wrapper {
@@ -1328,7 +1397,7 @@ body::-webkit-scrollbar-thumb {
 
 .form_wrapper .form_group_wrapper input {
   height: 35px;
-  width: 388px;
+  width: 97%;
   border: 1px solid #0082e6;
   padding: 5px;
 }
@@ -1338,8 +1407,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .form_wrapper .form_group_message_wrapper .form_message {
-  min-width: 388px;
-  max-width: 388px;
+  min-width: 97%;
+  max-width: 97%;
   min-height: 150px;
   border: 1px solid #0082e6;
   padding: 5px;

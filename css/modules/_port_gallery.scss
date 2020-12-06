@@ -20,20 +20,68 @@
             overflow: hidden;
         }            
             .gal_01 {
+                background-image:url(../images/gal_hawaiiantropic.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_02 {
+                background-image:url(../images/gal_springfields.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_03 {
+                background-image:url(../images/gal_getpizza.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_04 {
+                background-image:url(../images/gal_couplesresort.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_05 {
+                background-image:url(../images/gal_elin.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_06 {
+                background-image:url(../images/gal_banya.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_07 {
+                background-image:url(../images/gal_sonhoscoloridos.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
             .gal_08 {
+                background-image:url(../images/gal_dirtyshot.png);
+                background-color:black;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                overflow: hidden;
             }
     }
 }
@@ -44,9 +92,7 @@
             width:100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            .gallery_item {
-            }            
+            grid-template-rows: repeat(4, 1fr);            
                 .gal_01 {
                     grid-area: 1 / 1 / 2 / 2;
                 }
@@ -92,9 +138,7 @@
             width:100%;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            .gallery_item {
-            }            
+            grid-template-rows: repeat(2, 1fr);            
                 .gal_01 {
                     grid-area: 1 / 1 / 2 / 2;
                 }
@@ -154,7 +198,7 @@
 }
 .gallery_description:hover {
     opacity:100%;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(255, 255, 255, 0.88);
 }
 
 .project_link_container {

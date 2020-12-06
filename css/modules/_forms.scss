@@ -8,8 +8,7 @@
 .form_wrapper {
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
-    width: 400px;
+    width: 350px;
     .form_group_wrapper {
         display: flex;
         flex-direction:column;
@@ -19,7 +18,7 @@
             }
             input {
                 height:35px;
-                width:388px;
+                width:97%;
                 border: 1px solid $S_Blue;
                 padding:5px;
             }
@@ -27,8 +26,8 @@
         .form_group_message_wrapper {
             width:100%;
             .form_message {
-                min-width:388px;
-                max-width:388px;
+                min-width:97%;
+                max-width:97%;
                 min-height:150px;
                 border: 1px solid $S_Blue;
                 padding:5px;
