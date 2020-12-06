@@ -25,10 +25,15 @@ By it's very nature, this project will always be a "work in progress", however i
 Front-end for desktop and mobile is mostly done, though I will keep adjusting things here and there when I have the time.
 
 ### Assets
-Layout assets are in place and behaving as they should for the most part. Still got placeholders in the headers and and galleries though.
+Assets are in place and looking as intended for the most part, but there are still some placeholders here and there and a file that's absent from the repo. Detailing below:
+* SVG's (Completed)
+* Layout graphics (Complete)
+* Photos (Incomplete, there are still placeholders in the hero image and headers)
+* Gallery Items (Incomplete, only the covers have been placed for now)
+* Video (Completed, but the file and it's folder are absent from this repo because Git won't allow anything larger than 25MB)
 
 ### JavaScript applications
-Sticky topnav and template project gallery are working, though the code somewhate "hacky" for now. Still trying to figure out how to properly integrate vue.js.
+Sticky topnav and template project gallery are working, though the code is somewhat "hacky" for now. Still trying to figure out how to properly integrate vue.js.
 I also have plans in place to develop an introductory micro interaction for the home page's desktop version, but this one is not a priority right now and I'll only tackle it once everything else is done and working as intended.
 
 ### Back-end
